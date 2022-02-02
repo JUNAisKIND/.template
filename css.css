@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&display=swap');
+
+
+:root {
+    --test-sample: 'test-sample';
+
+    /* color */
+
+    /* size */
+
+    /* font size */
+    --font-large: 10px;
+    --font-medium: 8px;
+    --font-small: 6px;
+    --font-micro: 4px;
+
+    /* font */
+    --font-default: sans-serif;
+    --font-do-hyeon: 'Do Hyeon', var(--font-default);
+    --font-jua: 'Jua', var(--font-default);
+}
+
+
+
+/* 
+
+    <useful sites>
+        HTML 작성 사이트: jsbin.com
+        폰트 import 사이트: https://fonts.google.com/?preview.size=22&subset=korean
+        web docs:   https://www.w3schools.com/cssref/
+                    https://developer.mozilla.org/ko/docs/Web/CSS/box-sizing
+        선택자: https://blog.naver.com/popssong/222582544350
+
+    <selectors>
+
+        작성 방법:
+            element1((선택자)?(element2))*
+            ex. 
+                div.class#id {} -> 클래스가 class고 아이디가 id인 div태그들
+                div.class#id p {} -> 위의 div안의 p태그들
+                div.class#id > input[value="text"] {} -> 위의 div안의 자식요소 중(자식의 자식은 선택x) value가 "text"인 input태그들
+                div.class#id > input.class1#id1[value="text"] {} -> 위의 input 태그들 중 클래스가 class1이고 아이디가 id1인 요소들
+        선택자:
+            '>': 자식선택자, element1 자식인 element2들(자식의 자식은 선택 x)
+            ' ': 자손(하위)선택자, element1 안의 모든 element2들
+            '+': 인접(형제)선택자, element1의 바로 옆 element2
+            '~': 일반(형제)선택자, element1의 다음에 오는 모든 element2들
+            ',': element1과 element2 모두
+        element:
+            작성 방법:
+                (element)+
+                ex. input -> 모든 input 박스들
+                    input.class -> 클래스가 class인 모든 input 박스들
+                    input.class.id -> 클래스가 class고 아이디가 id인 모든 input 박스들
+                    input.class.id[value="text"] -> 클래스가 class고 아이디가 id이며, value가 "text"인 모든 input 박스들
+            Universal: *
+            type: Tag
+            ID: #id
+            Class: .class
+            State: element:state
+                :first-child
+                :last-child
+                :nth-child(
+                    Int: Int번쨰 요소
+                    2Int: 2의 배수
+                    even: 짝수 순서의 요소
+                    odd: 홀수 순서 요소
+                )
+                ...
+
+                ex. button:hover {} -> 마우스를 위에 올린 버튼
+            Attribute: element[Attribute] | element[Attribute <속성선택자> value]
+                <속성선택자>
+                    = : value와 같은가?
+                    ^= : value로 시작하는가?
+                    $= : value로 끝나는가?
+                    *= : value를 포함하는가?
+                    ~- : 공백으로 분리된 vlaue가 포함되는가
+                    |= : 정확하게 value거나, 'value-' 로 시작하는가
+                    
+                ex. a[href] -> href 속성값이 있는 a 태그
+                    a[href="naver.com"] -> href 속성값이 naver.com인 a 태그
+
+
+
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* padding margin을 포함하여 사이즈 결정 */
+}
+
+body {
+    font-family: var(--font-do-hyeon);
+}
