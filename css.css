@@ -89,6 +89,23 @@
         flex-wrap       Flex 요소들을 한줄 또는 여로줄에 걸쳐 정렬
         flex-flow       flex-direction + flex-warp (간략히 요약)
         align-content   세로선 상에 여분의 공간이 있으면 Flex 컨테이너 사이의 간격 조절
+    <Unit>
+        Absolute: px, pt, cm, mm, in, pc ...
+        Relative:
+            em      : 지정된 font-family와는 관계 없이 부모의 폰트 사이즈에 따라 달라짐. 
+                    -   html 기본 폰트사이즈 : 16px
+                    -   부모의 폰트사이즈가 정의되지 않은 개체의 1em = 16px = 100%
+                    -   부모의 폰트사이즈가 32px인 개체의 0.5em = 16px = 50%
+            rem     : Root 즉, html에 정의된 폰트 사이즈에 따라 달라짐
+            vw      : viewport's width = 100vw
+            vh      : viewport's height = 100vh
+            vmin    : small value of viewport's width and height = 100vmin
+            vmax    : big value of viewport's width and height = 100vmax
+            %       : 부모요소의 크기에 따라 달라짐
+            ex      : font-family의 소문자 x의 높이 = 1ex
+            ch      : font-family의 숫자 0의 너비 = 1ch
+            
+            
 */
 
 * {
