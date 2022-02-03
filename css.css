@@ -80,9 +80,15 @@
                     
                 ex. a[href] -> href 속성값이 있는 a 태그
                     a[href="naver.com"] -> href 속성값이 naver.com인 a 태그
-
-
-
+    <styles>
+        justify-content Flex 요소들을 가로선 상에서 정렬
+        align-items     세로선 상에서 정렬
+        flex-direction  정렬할 방향 지정
+        order           Flex 요소의 순서 지정
+        align-self      align-items 값을 무시하고 세로선 상에서 정렬
+        flex-wrap       Flex 요소들을 한줄 또는 여로줄에 걸쳐 정렬
+        flex-flow       flex-direction + flex-warp (간략히 요약)
+        align-content   세로선 상에 여분의 공간이 있으면 Flex 컨테이너 사이의 간격 조절
 */
 
 * {
